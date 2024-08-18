@@ -1,0 +1,40 @@
+<div class="box" id="exerciseWrapper">
+
+  <div class="field">
+    <label class="label">Exercise</label>
+
+    <div class="control">
+      <input class="input" type="text" placeholder="eg. bench press">
+    </div>
+  </div>
+
+
+  <div class="field">
+    <label class="label">Rep scheme</label>
+
+    <!--spawn sets here-->
+    <app-amrap-set></app-amrap-set>
+    <app-straight-set></app-straight-set>
+    <app-straight-set></app-straight-set>
+
+    <div class="control">
+      <div class="select">
+        <select>
+          <option>Straight set</option>
+          <option>AMRAP</option>
+        </select>
+      </div>
+      <button class="button is-link" style="margin-left: 10px;">Add</button>
+    </div>
+  </div>
+
+
+  <div class="field">
+    <label class="label">Remarks</label>
+    <div class="control">
+      <textarea class="textarea" placeholder="eg. pain/discomfort"></textarea>
+    </div>
+  </div>
+
+  <button class="button is-danger is-outlined" style="margin-left: 78%;">delete</button>
+</div>
